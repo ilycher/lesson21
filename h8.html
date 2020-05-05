@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/work-8.js"></script>
+    <title>work-8</title>
+  </head>
+  <body>
+    <script>"use strict";
+      const money = prompt(`Укажите количество гривень которое у вас есть`);
+      const product = prompt(`Укажите сколько стоит шоколадка`);
+      if (isNaN(money) && isNaN(product)) {
+        alert(`ты написал не число! Давай все сначала !`);
+      } else if (money <= 0 && product <= 0) {
+        alert(`зачем ты написал 0 или меньше.`);
+      } else {
+        let result = Math.fround(money / product);
+        let wholeQ = Math.floor(result);
+        let remainder = result - wholeQ;
+        result = product * remainder;
+        alert(
+          `Вам дадут ${wholeQ} плиток шоколада и ${result.toFixed(2)}  гривень сдачі`
+        );
+      }
+      </script>
+  </body>
+</html>

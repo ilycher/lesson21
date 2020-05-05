@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/work-3.js"></script>
+    <title>work-3</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+const length = prompt(
+  `Укажите длинну стороны квадрата, для того чтоб узнать периметр.`
+);
+if (isNaN(length)) {
+  alert(`ты написал не число! Давай все сначала !`);
+} else if (length <= 0) {
+  alert(`зачем ты написал 0 или меньше.`);
+} else {
+  let result = length * 4;
+  alert(`Периметр квадрата = ${result}`);
+}
+
+    </script>
+  </body>
+</html>

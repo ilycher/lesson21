@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/work-7.js"></script>
+    <title>work-7</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+const file = 820;
+const size = prompt(`Сколько ГБ памяти у вас есть ?`);
+if (isNaN(size)) {
+  alert(`ты написал не число! Давай все сначала !`);
+} else if (size <= 0) {
+  alert(`зачем ты написал 0 или меньше.`);
+} else {
+  let result = Math.trunc((size * 1000) / file);
+  alert(`У вас получится записать ${result} файл(ов) !`);
+}
+
+    </script>
+  </body>
+</html>

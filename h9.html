@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/work-9.js"></script>
+    <title>work-9</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+const number = prompt(`Укажите число которое нужно развернуть`);
+
+if (isNaN(number)) {
+  alert(`ты написал не число! Давай все сначала !`);
+} else {
+  let result = number;
+  result = result.split("").reverse().join("");
+  alert(`У тебя получилось=> ${result}`);
+}
+
+    </script>
+  </body>
+</html>

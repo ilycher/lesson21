@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/work-4.js"></script>
+    <title>work-4</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+const radius = prompt(`Введите радиус окружности для получения площади.`);
+if (isNaN(radius)) {
+  alert(`You написал не число! Давай все сначала !`);
+} else if (radius <= 0) {
+  alert(`You зачем ты написал 0 или меньше.`);
+} else {
+  let result = Math.PI * Math.pow(radius, 2);
+  alert(`You окружности = ${result.toFixed(3)}`);
+}
+
+    </script>
+  </body>
+</html>

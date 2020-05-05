@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/work-5.js"></script>
+    <title>work-5</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+const distance = prompt(`Укажите растояние между городами в (км)`);
+const time = prompt(`Укажите время за которое вы хотите добратся в (ч)`);
+if (isNaN(distance) || isNaN(time)) {
+  alert(`ты написал не число! Давай все сначала !`);
+} else if (distance <= 0 || time <= 0) {
+  alert(`зачем ты написал 0 или меньше.`);
+} else {
+  let result = distance / time;
+  alert(`Вам необходимо ехать со скоростью ${result} км/ч`);
+}
+
+    </script>
+  </body>
+</html>

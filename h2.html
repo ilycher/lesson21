@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/js/work-2.js"></script>
+    <title>work-2</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+const EAR = 2020;
+const bornDate = prompt(
+  `Здарова! Когда ты родился?! (укажите год рождения)`
+);
+if (isNaN(bornDate)) {
+  alert(`Оу ты написал не число! Давай все сначала !`);
+} else if (bornDate <= 0) {
+  alert(`А зачем ты написал 0 или меньше.`);
+} else {
+  let result = EAR - bornDate;
+  if (result <= 0) {
+    alert(`До твоего рождения еще ${-result} лет`);
+  } else if (result > 100) {
+    alert(`Какой шутник. тебе ${result} лет`);
+  } else {
+    alert(`Тебе ${result} лет !`);
+  }
+}
+
+    </script>
+  </body>
+</html>
